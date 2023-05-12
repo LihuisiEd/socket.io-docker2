@@ -8,7 +8,6 @@ WORKDIR /app
 COPY package*.json ./
 COPY index.html ./
 COPY server.js ./
-COPY public ./public
 
 # Instalar las dependencias
 RUN npm install
