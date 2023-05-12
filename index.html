@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualización de mensajes en tiempo real</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('mensaje', (message) => {
+      console.log('Nuevo mensaje recibido:', message);
+    });
+  </script>
+</head>
+<body>
+  <h1>Visualización de mensajes en tiempo real</h1>
+</body>
+</html>
